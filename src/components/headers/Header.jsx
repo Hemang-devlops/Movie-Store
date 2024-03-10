@@ -10,12 +10,12 @@ import ContentWrapper from "../contentWrapper/ContentWrapper";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
-    const [show, setShow] = useState("top");
-    const [lastScrollY, setLastScrollY] = useState(0);
     const [mobileMenu, setMobileMenu] = useState(false);
     const [query, setQuery] = useState("");
     const [showSearch, setShowSearch] = useState("");
     const navigate = useNavigate();
+    const [show, setShow] = useState("top");
+    const [lastScrollY, setLastScrollY] = useState(0);
     const location = useLocation();
 
     useEffect(() => {
